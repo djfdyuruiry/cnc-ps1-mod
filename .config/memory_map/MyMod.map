@@ -1,0 +1,177 @@
+
+Discarded input sections
+
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/AutoHook_Main.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/AutoHook_Main.o
+ .pdr           0x0000000000000000        0x0 .config/output/object_files/AutoHook_Main.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/AutoHook_Main.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/main.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/main.o
+ .pdr           0x0000000000000000       0x20 .config/output/object_files/main.o
+ .comment       0x0000000000000000       0x13 .config/output/object_files/main.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/main.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/syscalls.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/syscalls.o
+ .pdr           0x0000000000000000        0x0 .config/output/object_files/syscalls.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/syscalls.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/cnc-types.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/cnc-types.o
+ .pdr           0x0000000000000000       0x40 .config/output/object_files/cnc-types.o
+ .comment       0x0000000000000000       0x13 .config/output/object_files/cnc-types.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/cnc-types.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+debug_strings    0x000000008012db38 0x00000000000006bc
+main             0x00000000800a3878 0x0000000000100000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD symbols/DEFAULT.txt
+LOAD .config/output/object_files/AutoHook_Main.o
+LOAD .config/output/object_files/main.o
+LOAD .config/output/object_files/syscalls.o
+LOAD .config/output/object_files/cnc-types.o
+                0x000000008012fd98                _passwords_patsux = 0x8012fd98
+                0x00000000000d5634                _ui_credits = 0xd5634
+                0x000000000011b964                _player_credits = 0x11b964
+                0x000000000012e83c                _scenario_number = 0x12e83c
+                0x0000000080134c18                _InfantryE1 = 0x80134c18
+                0x0000000080132930                _UnitJeep = 0x80132930
+                0x000000008009c894                _strcpy = 0x8009c894
+                0x00000000800895d4                _get_mix_file_offset = 0x800895d4
+                0x0000000080088f6c                _load_mix_file_data = 0x80088f6c
+                0x000000008007f828                _SetGraphDebug = 0x8007f828
+
+.main           0x00000000800a3878        0x4
+ .config/output/object_files/AutoHook_Main.o(.text)
+ .text          0x00000000800a3878        0x4 .config/output/object_files/AutoHook_Main.o
+ .config/output/object_files/AutoHook_Main.o(.rodata)
+ .config/output/object_files/AutoHook_Main.o(.rodata*)
+ .config/output/object_files/AutoHook_Main.o(.data)
+ .data          0x00000000800a387c        0x0 .config/output/object_files/AutoHook_Main.o
+ .config/output/object_files/AutoHook_Main.o(.bss)
+ .bss           0x00000000800a387c        0x0 .config/output/object_files/AutoHook_Main.o
+
+.debug_strings  0x000000008012db38       0x98
+ .config/output/object_files/main.o(.text)
+ .text          0x000000008012db38       0x70 .config/output/object_files/main.o
+                0x000000008012db38                ModMain
+ .config/output/object_files/main.o(.rodata)
+ .config/output/object_files/main.o(.rodata*)
+ .rodata.str1.4
+                0x000000008012dba8        0x6 .config/output/object_files/main.o
+ .config/output/object_files/main.o(.data)
+ .data          0x000000008012dbae        0x0 .config/output/object_files/main.o
+ .config/output/object_files/main.o(.bss)
+ .bss           0x000000008012dbae        0x1 .config/output/object_files/main.o
+ .config/output/object_files/main.o(.sdata)
+ .config/output/object_files/main.o(.sbss)
+ .config/output/object_files/main.o(.scommon)
+ .config/output/object_files/syscalls.o(.text)
+ *fill*         0x000000008012dbaf        0x1 
+ .text          0x000000008012dbb0        0xc .config/output/object_files/syscalls.o
+                0x000000008012dbb0                printf_syscall
+ .config/output/object_files/syscalls.o(.rodata)
+ .config/output/object_files/syscalls.o(.rodata*)
+ .config/output/object_files/syscalls.o(.data)
+ .data          0x000000008012dbbc        0x0 .config/output/object_files/syscalls.o
+ .config/output/object_files/syscalls.o(.bss)
+ .bss           0x000000008012dbbc        0x0 .config/output/object_files/syscalls.o
+ .config/output/object_files/syscalls.o(.sdata)
+ .config/output/object_files/syscalls.o(.sbss)
+ .config/output/object_files/syscalls.o(.scommon)
+ .config/output/object_files/cnc-types.o(.text)
+ .text          0x000000008012dbbc       0x14 .config/output/object_files/cnc-types.o
+                0x000000008012dbbc                GetTypeEnumField
+                0x000000008012dbc4                SetTypeEnumField
+ .config/output/object_files/cnc-types.o(.rodata)
+ .config/output/object_files/cnc-types.o(.rodata*)
+ .config/output/object_files/cnc-types.o(.data)
+ .data          0x000000008012dbd0        0x0 .config/output/object_files/cnc-types.o
+ .config/output/object_files/cnc-types.o(.bss)
+ .bss           0x000000008012dbd0        0x0 .config/output/object_files/cnc-types.o
+ .config/output/object_files/cnc-types.o(.sdata)
+ .config/output/object_files/cnc-types.o(.sbss)
+ .config/output/object_files/cnc-types.o(.scommon)
+ *(.text)
+ *(.branch_lt)
+
+/DISCARD/
+ *(.comment)
+ *(.pdr)
+ *(.mdebug)
+ *(.reginfo)
+ *(.MIPS.abiflags)
+ *(.eh_frame)
+ *(.gnu.attributes)
+OUTPUT(Z:/home/matthew/.local/share/GameModdingUtility/projects/command-and-conquer-td/.config/output/object_files/MyMod.elf elf32-littlemips)
+
+.mdebug.abi32   0x0000000000000000        0x0
+ .mdebug.abi32  0x0000000000000000        0x0 .config/output/object_files/main.o
+ .mdebug.abi32  0x0000000000000000        0x0 .config/output/object_files/cnc-types.o
+
+.debug_line     0x0000000000000000      0x2fd
+ .debug_line    0x0000000000000000       0x47 .config/output/object_files/AutoHook_Main.o
+ .debug_line    0x0000000000000047      0x168 .config/output/object_files/main.o
+ .debug_line    0x00000000000001af       0x49 .config/output/object_files/syscalls.o
+ .debug_line    0x00000000000001f8      0x105 .config/output/object_files/cnc-types.o
+
+.debug_line_str
+                0x0000000000000000       0xbf
+ .debug_line_str
+                0x0000000000000000       0xb4 .config/output/object_files/AutoHook_Main.o
+                                         0xc4 (size before relaxing)
+ .debug_line_str
+                0x00000000000000b4        0xb .config/output/object_files/syscalls.o
+                                         0xba (size before relaxing)
+
+.debug_info     0x0000000000000000      0x2dc
+ .debug_info    0x0000000000000000       0x24 .config/output/object_files/AutoHook_Main.o
+ .debug_info    0x0000000000000024      0x189 .config/output/object_files/main.o
+ .debug_info    0x00000000000001ad       0x24 .config/output/object_files/syscalls.o
+ .debug_info    0x00000000000001d1      0x10b .config/output/object_files/cnc-types.o
+
+.debug_abbrev   0x0000000000000000      0x1a8
+ .debug_abbrev  0x0000000000000000       0x14 .config/output/object_files/AutoHook_Main.o
+ .debug_abbrev  0x0000000000000014       0xde .config/output/object_files/main.o
+ .debug_abbrev  0x00000000000000f2       0x14 .config/output/object_files/syscalls.o
+ .debug_abbrev  0x0000000000000106       0xa2 .config/output/object_files/cnc-types.o
+
+.debug_aranges  0x0000000000000000       0x80
+ .debug_aranges
+                0x0000000000000000       0x20 .config/output/object_files/AutoHook_Main.o
+ .debug_aranges
+                0x0000000000000020       0x20 .config/output/object_files/main.o
+ .debug_aranges
+                0x0000000000000040       0x20 .config/output/object_files/syscalls.o
+ .debug_aranges
+                0x0000000000000060       0x20 .config/output/object_files/cnc-types.o
+
+.debug_str      0x0000000000000000      0x335
+ .debug_str     0x0000000000000000       0xc0 .config/output/object_files/AutoHook_Main.o
+ .debug_str     0x00000000000000c0      0x189 .config/output/object_files/main.o
+                                        0x1f7 (size before relaxing)
+ .debug_str     0x0000000000000249       0x5f .config/output/object_files/syscalls.o
+                                         0xbb (size before relaxing)
+ .debug_str     0x00000000000002a8       0x8d .config/output/object_files/cnc-types.o
+                                        0x1b2 (size before relaxing)
+
+.debug_frame    0x0000000000000000       0x5c
+ .debug_frame   0x0000000000000000       0x2c .config/output/object_files/main.o
+ .debug_frame   0x000000000000002c       0x30 .config/output/object_files/cnc-types.o
+
+.debug_loclists
+                0x0000000000000000       0x1e
+ .debug_loclists
+                0x0000000000000000       0x1e .config/output/object_files/cnc-types.o

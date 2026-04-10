@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "project_name": "command-and-conquer-td",
+  "project_folder": "./",
+  "currently_selected_build_index": 0,
+  "build_versions": [
+    {
+      "build_name": "DEFAULT",
+      "platform": "PS1",
+      "symbols_file": "DEFAULT.txt",
+      "injection_files": [
+        "SLUS_003.79"
+      ],
+      "injection_file_offsets": {
+        "SLUS_003.79": "F800"
+      },
+      "injection_file_types": {
+        "SLUS_003.79": "disk"
+      },
+      "extracted_game_folder": "./.config/game_files/DEFAULT",
+      "main_executable": "SLUS_003.79",
+      "source_path": "Command & Conquer (USA) (Disc 1) (GDI).cue",
+      "compiler_flags": "-Os",
+      "is_single_file_mode": false,
+      "single_file_path": null,
+      "section_maps": {},
+      "code_caves": [
+        {
+          "name": "debug_strings",
+          "code_files": [
+            "./src/main.c",
+            "./asm/syscalls.s",
+            "./src/cnc-types.c"
+          ],
+          "memory_address": "8012DB38",
+          "size": "6BC",
+          "injection_file": "SLUS_003.79",
+          "injection_file_address": "11E338",
+          "auto_calculate_injection_file_address": false,
+          "injection_type": "existing_file",
+          "enabled": true
+        }
+      ],
+      "hooks": [
+        {
+          "name": "main",
+          "code_files": [
+            "./asm/AutoHook_Main.s"
+          ],
+          "memory_address": "800A3878",
+          "size": "0",
+          "injection_file": "SLUS_003.79",
+          "injection_file_address": "94078",
+          "auto_calculate_injection_file_address": true,
+          "enabled": true
+        }
+      ],
+      "binary_patches": [],
+      "multi_patches": []
+    }
+  ]
+}

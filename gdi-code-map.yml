@@ -1,0 +1,32 @@
+variables:
+  passwords_patsux:
+    address: "0x8012FD98"
+    type: char
+  ui_credits:
+    address: "0x000D5634"
+    type: int
+  player_credits:
+    address: "0x0011B964"
+    type: int
+  scenario_number:
+    address: "0x0012E83C"
+    type: int
+  InfantryE1:
+    address: "0x80134c18"
+    type: InfantryTypeClass
+  UnitJeep:
+    address: "0x80132930"
+    type: UnitTypeClass
+functions:
+  strcpy:
+    address: "0x8009C894"
+    signature: char * ${NAME}(char* source, const char* destination)
+  get_mix_file_offset:
+    address: "0x800895d4"
+    signature: int ${NAME}(const char* filename)
+  load_mix_file_data:
+    address: "0x80088f6c"
+    signature: int ${NAME}(const char* filename, unsigned long* destination)
+  SetGraphDebug:
+    address: "0x8007f828"
+    signature: int ${NAME}(int level)

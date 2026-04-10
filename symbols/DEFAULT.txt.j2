@@ -1,0 +1,6 @@
+/* variables */
+{% for key, value in code_map.variables.items() %}_{{ key }} = {{ value.address }};
+{% endfor %}
+/* functions */
+{% for key, value in code_map.functions.items() %}_{{ key }} = {{ value.address }};
+{% endfor %}

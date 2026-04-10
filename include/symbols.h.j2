@@ -1,0 +1,13 @@
+#ifndef SYMBOLS_H
+#define SYMBOLS_H
+
+#include <types.h>
+
+// variables
+{% for key, value in code_map.variables.items() %}extern {{ value.type }} _{{ key }}; //{{ value.address }}
+{% endfor %}
+// functions
+{% for key, value in code_map.functions.items() %}extern {{ value.signature | replace("${NAME}", "_" + key) }}; //{{ value.address }}
+{% endfor %}
+#endif //SYMBOLS_H
+
