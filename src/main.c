@@ -29,5 +29,7 @@ void ModMain(void) {
 
     //EnsurePlayerCreditsIsAtLeast5K();
 
+    _ui_music_track = _music_track = 10;
+
     return;
 }

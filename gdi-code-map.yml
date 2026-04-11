@@ -1,19 +1,47 @@
 variables:
+  # game control options
+  cursor_speed:
+    address: "0x800DEDB0"
+    type: unsigned char
+  help_text:
+    address: "0x800DEDB4"
+    type: unsigned char
+  effects_volume:
+    address: "0x800DEDB8"
+    type: unsigned char
+  music_volume:
+    address: "0x800DEDC4"
+    type: unsigned char
+  music_track: # update this and ui_music_track to change the score
+    address: "0x8012FB59"
+    type: unsigned char
+  music_track_should_loop:
+    address: "0x8012FB59"
+    type: unsigned char
+  # ui control
+  ui_music_track: # update this and music_track to change the score
+    address: "0x800DEDC0"
+    type: unsigned char
+  ui_credits: # displays credits and acts as a ticker to show credits going up or down - shows player_credits value OR uses player_credits to determine ticker direction (up, down)
+    address: "0x000D5634"
+    type: int
+  # level passwords
   passwords_patsux:
     address: "0x8012FD98"
     type: char
-  ui_credits:
-    address: "0x000D5634"
-    type: int
+  # player control
   player_credits:
     address: "0x0011B964"
     type: int
+  # scenario control
   scenario_number:
     address: "0x0012E83C"
     type: int
+  # infantry types
   InfantryE1:
     address: "0x80134c18"
     type: InfantryTypeClass
+  # unit types
   UnitJeep:
     address: "0x80132930"
     type: UnitTypeClass
