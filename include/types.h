@@ -18,15 +18,6 @@ typedef signed short int        s16, int16_t;
 typedef unsigned int            u32, uint32_t, uint, undefined4;
 typedef signed int              s32, int32_t;
 
-// cnc game engine type aliases for readability
-typedef unsigned int ObjectFieldOffset;
-typedef char CncEnum;
-typedef char ObjectTypeClass;
-typedef ObjectTypeClass TechnoTypeClass;
-typedef TechnoTypeClass InfantryTypeClass;
-typedef ObjectTypeClass TechnoTypeClass;
-typedef TechnoTypeClass UnitTypeClass;
-
 // ==================== Helper Macros ====================
 
 #define ARRAY_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))

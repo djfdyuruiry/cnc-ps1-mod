@@ -1,0 +1,14 @@
+#ifndef MOD_TYPES_H
+#define MOD_TYPES_H
+
+// enums
+enum CncState
+{
+    GAME_STATE_UNKNOWN,
+    GAME_STATE_FMV,
+    GAME_STATE_MAIN_MENU,
+    GAME_STATE_SCENARIO,
+    GAME_STATE_PAUSE
+};
+
+#endif //MOD_TYPES_H

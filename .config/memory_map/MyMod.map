@@ -1,113 +1,220 @@
 
 Discarded input sections
 
- .reginfo       0x0000000000000000       0x18 .config/output/object_files/AutoHook_Main.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 .config/output/object_files/AutoHook_Main.o
- .pdr           0x0000000000000000        0x0 .config/output/object_files/AutoHook_Main.o
+                0x0000000000000000       0x18 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .pdr           0x0000000000000000        0x0 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
  .gnu.attributes
-                0x0000000000000000       0x10 .config/output/object_files/AutoHook_Main.o
+                0x0000000000000000       0x10 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .pdr           0x0000000000000000        0x0 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .pdr           0x0000000000000000        0x0 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/AutoHook_OnEveryFrame_3.o
  .reginfo       0x0000000000000000       0x18 .config/output/object_files/main.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 .config/output/object_files/main.o
- .pdr           0x0000000000000000       0x20 .config/output/object_files/main.o
+ .pdr           0x0000000000000000       0x60 .config/output/object_files/main.o
  .comment       0x0000000000000000       0x13 .config/output/object_files/main.o
  .gnu.attributes
                 0x0000000000000000       0x10 .config/output/object_files/main.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/cnc_types.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/cnc_types.o
+ .pdr           0x0000000000000000       0x40 .config/output/object_files/cnc_types.o
+ .comment       0x0000000000000000       0x13 .config/output/object_files/cnc_types.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/cnc_types.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/game.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/game.o
+ .pdr           0x0000000000000000       0xa0 .config/output/object_files/game.o
+ .comment       0x0000000000000000       0x13 .config/output/object_files/game.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/game.o
+ .reginfo       0x0000000000000000       0x18 .config/output/object_files/player.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 .config/output/object_files/player.o
+ .pdr           0x0000000000000000       0x40 .config/output/object_files/player.o
+ .comment       0x0000000000000000       0x13 .config/output/object_files/player.o
+ .gnu.attributes
+                0x0000000000000000       0x10 .config/output/object_files/player.o
  .reginfo       0x0000000000000000       0x18 .config/output/object_files/syscalls.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 .config/output/object_files/syscalls.o
  .pdr           0x0000000000000000        0x0 .config/output/object_files/syscalls.o
  .gnu.attributes
                 0x0000000000000000       0x10 .config/output/object_files/syscalls.o
- .reginfo       0x0000000000000000       0x18 .config/output/object_files/cnc-types.o
- .MIPS.abiflags
-                0x0000000000000000       0x18 .config/output/object_files/cnc-types.o
- .pdr           0x0000000000000000       0x40 .config/output/object_files/cnc-types.o
- .comment       0x0000000000000000       0x13 .config/output/object_files/cnc-types.o
- .gnu.attributes
-                0x0000000000000000       0x10 .config/output/object_files/cnc-types.o
 
 Memory Configuration
 
 Name             Origin             Length             Attributes
-debug_strings    0x000000008012db38 0x00000000000006bc
-main             0x00000000800a3878 0x0000000000100000
+debug_strings    0x000000008012c12c 0x0000000000000aba
+AutoHook_OnScenarioLoad_1 0x000000008006cf2c 0x0000000000100000
+AutoHook_OnMainMenuHandlerCall_2 0x00000000800716fc 0x0000000000100000
+AutoHook_OnEveryFrame_3 0x00000000800a3878 0x0000000000100000
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
 
 LOAD symbols/DEFAULT.txt
-LOAD .config/output/object_files/AutoHook_Main.o
+LOAD .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+LOAD .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+LOAD .config/output/object_files/AutoHook_OnEveryFrame_3.o
 LOAD .config/output/object_files/main.o
+LOAD .config/output/object_files/cnc_types.o
+LOAD .config/output/object_files/game.o
+LOAD .config/output/object_files/player.o
 LOAD .config/output/object_files/syscalls.o
-LOAD .config/output/object_files/cnc-types.o
+                0x000000008012fed0                _current_buttons = 0x8012fed0
+                0x000000008012fed2                _buttons_pressed = 0x8012fed2
+                0x000000008012fed4                _buttons_released = 0x8012fed4
+                0x000000008012fed6                _previous_buttons = 0x8012fed6
+                0x000000000012e86d                _gdi_disc_flag = 0x12e86d
+                0x00000000000cc9a4                _ini_data_storage = 0xcc9a4
+                0x000000008012fce4                _covert_ops_flag = 0x8012fce4
+                0x00000000800dedb0                _cursor_speed = 0x800dedb0
+                0x00000000800dedb4                _help_text = 0x800dedb4
                 0x00000000800dedb8                _effects_volume = 0x800dedb8
                 0x00000000800dedc4                _music_volume = 0x800dedc4
-                0x00000000800dedc0                _ui_music_track = 0x800dedc0
                 0x000000008012fb59                _music_track = 0x8012fb59
-                0x000000008012fd98                _passwords_patsux = 0x8012fd98
+                0x000000008012fb59                _music_track_should_loop = 0x8012fb59
+                0x000000008012e894                _reached_main_menu_flag = 0x8012e894
+                0x000000008012fa58                _pause_menu_flag = 0x8012fa58
+                0x000000008012d01c                _pause_menu_message = 0x8012d01c
+                0x00000000800dedc0                _ui_music_track = 0x800dedc0
                 0x00000000000d5634                _ui_credits = 0xd5634
+                0x000000008012fd98                _passwords_patsux = 0x8012fd98
                 0x000000000011b964                _player_credits = 0x11b964
-                0x000000000012e83c                _scenario_number = 0x12e83c
+                0x000000008012e870                _scenario_number = 0x8012e870
+                0x00000000000ca6fc                _scenario_name = 0xca6fc
                 0x0000000080134c18                _InfantryE1 = 0x80134c18
+                0x0000000080135410                _InfantryCommando = 0x80135410
                 0x0000000080132930                _UnitJeep = 0x80132930
+                0x00000000800a343c                _ClearImage = 0x800a343c
+                0x00000000800989c4                _itoa = 0x800989c4
                 0x000000008009c894                _strcpy = 0x8009c894
+                0x000000008009c8d8                _strlen = 0x8009c8d8
+                0x000000008009d1fc                _sprintf = 0x8009d1fc
+                0x000000008007f828                _SetGraphDebug = 0x8007f828
                 0x00000000800895d4                _get_mix_file_offset = 0x800895d4
                 0x0000000080088f6c                _load_mix_file_data = 0x80088f6c
-                0x000000008007f828                _SetGraphDebug = 0x8007f828
+                0x0000000080087414                _set_music_track = 0x80087414
+                0x0000000080087008                _start_music_track_playback = 0x80087008
 
-.main           0x00000000800a3878        0x4
- .config/output/object_files/AutoHook_Main.o(.text)
- .text          0x00000000800a3878        0x4 .config/output/object_files/AutoHook_Main.o
- .config/output/object_files/AutoHook_Main.o(.rodata)
- .config/output/object_files/AutoHook_Main.o(.rodata*)
- .config/output/object_files/AutoHook_Main.o(.data)
- .data          0x00000000800a387c        0x0 .config/output/object_files/AutoHook_Main.o
- .config/output/object_files/AutoHook_Main.o(.bss)
- .bss           0x00000000800a387c        0x0 .config/output/object_files/AutoHook_Main.o
+.AutoHook_OnScenarioLoad_1
+                0x000000008006cf2c        0x4
+ .config/output/object_files/AutoHook_OnScenarioLoad_1.o(.text)
+ .text          0x000000008006cf2c        0x4 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .config/output/object_files/AutoHook_OnScenarioLoad_1.o(.rodata)
+ .config/output/object_files/AutoHook_OnScenarioLoad_1.o(.rodata*)
+ .config/output/object_files/AutoHook_OnScenarioLoad_1.o(.data)
+ .data          0x000000008006cf30        0x0 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .config/output/object_files/AutoHook_OnScenarioLoad_1.o(.bss)
+ .bss           0x000000008006cf30        0x0 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
 
-.debug_strings  0x000000008012db38       0xbc
+.AutoHook_OnMainMenuHandlerCall_2
+                0x00000000800716fc        0x4
+ .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o(.text)
+ .text          0x00000000800716fc        0x4 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o(.rodata)
+ .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o(.rodata*)
+ .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o(.data)
+ .data          0x0000000080071700        0x0 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o(.bss)
+ .bss           0x0000000080071700        0x0 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+
+.AutoHook_OnEveryFrame_3
+                0x00000000800a3878        0x4
+ .config/output/object_files/AutoHook_OnEveryFrame_3.o(.text)
+ .text          0x00000000800a3878        0x4 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .config/output/object_files/AutoHook_OnEveryFrame_3.o(.rodata)
+ .config/output/object_files/AutoHook_OnEveryFrame_3.o(.rodata*)
+ .config/output/object_files/AutoHook_OnEveryFrame_3.o(.data)
+ .data          0x00000000800a387c        0x0 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .config/output/object_files/AutoHook_OnEveryFrame_3.o(.bss)
+ .bss           0x00000000800a387c        0x0 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+
+.debug_strings  0x000000008012c12c      0x2fc
  .config/output/object_files/main.o(.text)
- .text          0x000000008012db38       0x94 .config/output/object_files/main.o
-                0x000000008012db38                ModMain
+ .text          0x000000008012c12c      0x204 .config/output/object_files/main.o
+                0x000000008012c12c                OnScenarioLoad
+                0x000000008012c15c                OnMainMenuHandlerCall
+                0x000000008012c198                OnEveryFrame
  .config/output/object_files/main.o(.rodata)
  .config/output/object_files/main.o(.rodata*)
  .rodata.str1.4
-                0x000000008012dbcc        0x6 .config/output/object_files/main.o
+                0x000000008012c330        0x6 .config/output/object_files/main.o
  .config/output/object_files/main.o(.data)
- .data          0x000000008012dbd2        0x0 .config/output/object_files/main.o
+ .data          0x000000008012c336        0x0 .config/output/object_files/main.o
  .config/output/object_files/main.o(.bss)
- .bss           0x000000008012dbd2        0x1 .config/output/object_files/main.o
+ *fill*         0x000000008012c336        0x2 
+ .bss           0x000000008012c338        0xc .config/output/object_files/main.o
  .config/output/object_files/main.o(.sdata)
  .config/output/object_files/main.o(.sbss)
  .config/output/object_files/main.o(.scommon)
+ .config/output/object_files/cnc_types.o(.text)
+ .text          0x000000008012c344       0x14 .config/output/object_files/cnc_types.o
+                0x000000008012c344                GetTypeEnumField
+                0x000000008012c34c                SetTypeEnumField
+ .config/output/object_files/cnc_types.o(.rodata)
+ .config/output/object_files/cnc_types.o(.rodata*)
+ .config/output/object_files/cnc_types.o(.data)
+ .data          0x000000008012c358        0x0 .config/output/object_files/cnc_types.o
+ .config/output/object_files/cnc_types.o(.bss)
+ .bss           0x000000008012c358        0x0 .config/output/object_files/cnc_types.o
+ .config/output/object_files/cnc_types.o(.sdata)
+ .config/output/object_files/cnc_types.o(.sbss)
+ .config/output/object_files/cnc_types.o(.scommon)
+ .config/output/object_files/game.o(.text)
+ .text          0x000000008012c358       0x80 .config/output/object_files/game.o
+                0x000000008012c358                GameHasLoaded
+                0x000000008012c370                PlayMusicTrack
+                0x000000008012c38c                PauseMenuIsActive
+                0x000000008012c39c                EnsurePauseMenuShown
+                0x000000008012c3bc                SetPauseMenuMessage
+ .config/output/object_files/game.o(.rodata)
+ .config/output/object_files/game.o(.rodata*)
+ .config/output/object_files/game.o(.data)
+ .data          0x000000008012c3d8        0x0 .config/output/object_files/game.o
+ .config/output/object_files/game.o(.bss)
+ .bss           0x000000008012c3d8        0x0 .config/output/object_files/game.o
+ .config/output/object_files/game.o(.sdata)
+ .config/output/object_files/game.o(.sbss)
+ .config/output/object_files/game.o(.scommon)
+ .config/output/object_files/player.o(.text)
+ .text          0x000000008012c3d8       0x44 .config/output/object_files/player.o
+                0x000000008012c3d8                ModifyPlayerCredits
+                0x000000008012c404                SetPlayerCredits
+ .config/output/object_files/player.o(.rodata)
+ .config/output/object_files/player.o(.rodata*)
+ .config/output/object_files/player.o(.data)
+ .data          0x000000008012c41c        0x0 .config/output/object_files/player.o
+ .config/output/object_files/player.o(.bss)
+ .bss           0x000000008012c41c        0x0 .config/output/object_files/player.o
+ .config/output/object_files/player.o(.sdata)
+ .config/output/object_files/player.o(.sbss)
+ .config/output/object_files/player.o(.scommon)
  .config/output/object_files/syscalls.o(.text)
- *fill*         0x000000008012dbd3        0x1 
- .text          0x000000008012dbd4        0xc .config/output/object_files/syscalls.o
-                0x000000008012dbd4                printf_syscall
+ .text          0x000000008012c41c        0xc .config/output/object_files/syscalls.o
+                0x000000008012c41c                printf_syscall
  .config/output/object_files/syscalls.o(.rodata)
  .config/output/object_files/syscalls.o(.rodata*)
  .config/output/object_files/syscalls.o(.data)
- .data          0x000000008012dbe0        0x0 .config/output/object_files/syscalls.o
+ .data          0x000000008012c428        0x0 .config/output/object_files/syscalls.o
  .config/output/object_files/syscalls.o(.bss)
- .bss           0x000000008012dbe0        0x0 .config/output/object_files/syscalls.o
+ .bss           0x000000008012c428        0x0 .config/output/object_files/syscalls.o
  .config/output/object_files/syscalls.o(.sdata)
  .config/output/object_files/syscalls.o(.sbss)
  .config/output/object_files/syscalls.o(.scommon)
- .config/output/object_files/cnc-types.o(.text)
- .text          0x000000008012dbe0       0x14 .config/output/object_files/cnc-types.o
-                0x000000008012dbe0                GetTypeEnumField
-                0x000000008012dbe8                SetTypeEnumField
- .config/output/object_files/cnc-types.o(.rodata)
- .config/output/object_files/cnc-types.o(.rodata*)
- .config/output/object_files/cnc-types.o(.data)
- .data          0x000000008012dbf4        0x0 .config/output/object_files/cnc-types.o
- .config/output/object_files/cnc-types.o(.bss)
- .bss           0x000000008012dbf4        0x0 .config/output/object_files/cnc-types.o
- .config/output/object_files/cnc-types.o(.sdata)
- .config/output/object_files/cnc-types.o(.sbss)
- .config/output/object_files/cnc-types.o(.scommon)
  *(.text)
  *(.branch_lt)
 
@@ -123,59 +230,108 @@ OUTPUT(Z:/home/matthew/.local/share/GameModdingUtility/projects/command-and-conq
 
 .mdebug.abi32   0x0000000000000000        0x0
  .mdebug.abi32  0x0000000000000000        0x0 .config/output/object_files/main.o
- .mdebug.abi32  0x0000000000000000        0x0 .config/output/object_files/cnc-types.o
+ .mdebug.abi32  0x0000000000000000        0x0 .config/output/object_files/cnc_types.o
+ .mdebug.abi32  0x0000000000000000        0x0 .config/output/object_files/game.o
+ .mdebug.abi32  0x0000000000000000        0x0 .config/output/object_files/player.o
 
-.debug_line     0x0000000000000000      0x32d
- .debug_line    0x0000000000000000       0x47 .config/output/object_files/AutoHook_Main.o
- .debug_line    0x0000000000000047      0x198 .config/output/object_files/main.o
- .debug_line    0x00000000000001df       0x49 .config/output/object_files/syscalls.o
- .debug_line    0x0000000000000228      0x105 .config/output/object_files/cnc-types.o
+.debug_line     0x0000000000000000      0x6fb
+ .debug_line    0x0000000000000000       0x47 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .debug_line    0x0000000000000047       0x47 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .debug_line    0x000000000000008e       0x47 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .debug_line    0x00000000000000d5      0x259 .config/output/object_files/main.o
+ .debug_line    0x000000000000032e      0x109 .config/output/object_files/cnc_types.o
+ .debug_line    0x0000000000000437      0x158 .config/output/object_files/game.o
+ .debug_line    0x000000000000058f      0x123 .config/output/object_files/player.o
+ .debug_line    0x00000000000006b2       0x49 .config/output/object_files/syscalls.o
 
 .debug_line_str
-                0x0000000000000000       0xbf
+                0x0000000000000000      0x168
  .debug_line_str
-                0x0000000000000000       0xb4 .config/output/object_files/AutoHook_Main.o
-                                         0xc4 (size before relaxing)
+                0x0000000000000000       0xcc .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+                                         0xe8 (size before relaxing)
  .debug_line_str
-                0x00000000000000b4        0xb .config/output/object_files/syscalls.o
+                0x00000000000000cc       0x23 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+                                         0xf6 (size before relaxing)
+ .debug_line_str
+                0x00000000000000ef       0x1a .config/output/object_files/AutoHook_OnEveryFrame_3.o
+                                         0xe4 (size before relaxing)
+ .debug_line_str
+                0x0000000000000109       0x5f .config/output/object_files/syscalls.o
                                          0xba (size before relaxing)
 
-.debug_info     0x0000000000000000      0x2f2
- .debug_info    0x0000000000000000       0x24 .config/output/object_files/AutoHook_Main.o
- .debug_info    0x0000000000000024      0x19f .config/output/object_files/main.o
- .debug_info    0x00000000000001c3       0x24 .config/output/object_files/syscalls.o
- .debug_info    0x00000000000001e7      0x10b .config/output/object_files/cnc-types.o
+.debug_info     0x0000000000000000      0x808
+ .debug_info    0x0000000000000000       0x24 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .debug_info    0x0000000000000024       0x24 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .debug_info    0x0000000000000048       0x24 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .debug_info    0x000000000000006c      0x3e9 .config/output/object_files/main.o
+ .debug_info    0x0000000000000455       0xe4 .config/output/object_files/cnc_types.o
+ .debug_info    0x0000000000000539      0x1c3 .config/output/object_files/game.o
+ .debug_info    0x00000000000006fc       0xe8 .config/output/object_files/player.o
+ .debug_info    0x00000000000007e4       0x24 .config/output/object_files/syscalls.o
 
-.debug_abbrev   0x0000000000000000      0x1a5
- .debug_abbrev  0x0000000000000000       0x14 .config/output/object_files/AutoHook_Main.o
- .debug_abbrev  0x0000000000000014       0xdb .config/output/object_files/main.o
- .debug_abbrev  0x00000000000000ef       0x14 .config/output/object_files/syscalls.o
- .debug_abbrev  0x0000000000000103       0xa2 .config/output/object_files/cnc-types.o
+.debug_abbrev   0x0000000000000000      0x4f9
+ .debug_abbrev  0x0000000000000000       0x14 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .debug_abbrev  0x0000000000000014       0x14 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+ .debug_abbrev  0x0000000000000028       0x14 .config/output/object_files/AutoHook_OnEveryFrame_3.o
+ .debug_abbrev  0x000000000000003c      0x1d9 .config/output/object_files/main.o
+ .debug_abbrev  0x0000000000000215       0x9e .config/output/object_files/cnc_types.o
+ .debug_abbrev  0x00000000000002b3      0x172 .config/output/object_files/game.o
+ .debug_abbrev  0x0000000000000425       0xc0 .config/output/object_files/player.o
+ .debug_abbrev  0x00000000000004e5       0x14 .config/output/object_files/syscalls.o
 
-.debug_aranges  0x0000000000000000       0x80
+.debug_aranges  0x0000000000000000      0x100
  .debug_aranges
-                0x0000000000000000       0x20 .config/output/object_files/AutoHook_Main.o
+                0x0000000000000000       0x20 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
  .debug_aranges
-                0x0000000000000020       0x20 .config/output/object_files/main.o
+                0x0000000000000020       0x20 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
  .debug_aranges
-                0x0000000000000040       0x20 .config/output/object_files/syscalls.o
+                0x0000000000000040       0x20 .config/output/object_files/AutoHook_OnEveryFrame_3.o
  .debug_aranges
-                0x0000000000000060       0x20 .config/output/object_files/cnc-types.o
+                0x0000000000000060       0x20 .config/output/object_files/main.o
+ .debug_aranges
+                0x0000000000000080       0x20 .config/output/object_files/cnc_types.o
+ .debug_aranges
+                0x00000000000000a0       0x20 .config/output/object_files/game.o
+ .debug_aranges
+                0x00000000000000c0       0x20 .config/output/object_files/player.o
+ .debug_aranges
+                0x00000000000000e0       0x20 .config/output/object_files/syscalls.o
 
-.debug_str      0x0000000000000000      0x345
- .debug_str     0x0000000000000000       0xc0 .config/output/object_files/AutoHook_Main.o
- .debug_str     0x00000000000000c0      0x199 .config/output/object_files/main.o
-                                        0x214 (size before relaxing)
- .debug_str     0x0000000000000259       0x5f .config/output/object_files/syscalls.o
+.debug_str      0x0000000000000000      0x81d
+ .debug_str     0x0000000000000000       0xd8 .config/output/object_files/AutoHook_OnScenarioLoad_1.o
+ .debug_str     0x00000000000000d8       0x83 .config/output/object_files/AutoHook_OnMainMenuHandlerCall_2.o
+                                         0xdf (size before relaxing)
+ .debug_str     0x000000000000015b       0x7a .config/output/object_files/AutoHook_OnEveryFrame_3.o
+                                         0xd6 (size before relaxing)
+ .debug_str     0x00000000000001d5      0x3e9 .config/output/object_files/main.o
+                                        0x46d (size before relaxing)
+ .debug_str     0x00000000000005be       0x8d .config/output/object_files/cnc_types.o
+                                        0x161 (size before relaxing)
+ .debug_str     0x000000000000064b       0xec .config/output/object_files/game.o
+                                        0x22f (size before relaxing)
+ .debug_str     0x0000000000000737       0x87 .config/output/object_files/player.o
+                                        0x192 (size before relaxing)
+ .debug_str     0x00000000000007be       0x5f .config/output/object_files/syscalls.o
                                          0xbb (size before relaxing)
- .debug_str     0x00000000000002b8       0x8d .config/output/object_files/cnc-types.o
-                                        0x1b2 (size before relaxing)
-
-.debug_frame    0x0000000000000000       0x5c
- .debug_frame   0x0000000000000000       0x2c .config/output/object_files/main.o
- .debug_frame   0x000000000000002c       0x30 .config/output/object_files/cnc-types.o
 
 .debug_loclists
-                0x0000000000000000       0x1e
+                0x0000000000000000       0xe0
  .debug_loclists
-                0x0000000000000000       0x1e .config/output/object_files/cnc-types.o
+                0x0000000000000000       0x48 .config/output/object_files/main.o
+ .debug_loclists
+                0x0000000000000048       0x1e .config/output/object_files/cnc_types.o
+ .debug_loclists
+                0x0000000000000066       0x3f .config/output/object_files/game.o
+ .debug_loclists
+                0x00000000000000a5       0x3b .config/output/object_files/player.o
+
+.debug_rnglists
+                0x0000000000000000       0x4b
+ .debug_rnglists
+                0x0000000000000000       0x4b .config/output/object_files/main.o
+
+.debug_frame    0x0000000000000000      0x158
+ .debug_frame   0x0000000000000000       0x8c .config/output/object_files/main.o
+ .debug_frame   0x000000000000008c       0x30 .config/output/object_files/cnc_types.o
+ .debug_frame   0x00000000000000bc       0x6c .config/output/object_files/game.o
+ .debug_frame   0x0000000000000128       0x30 .config/output/object_files/player.o

@@ -9,8 +9,17 @@ function main() {
 
   pushd ~/.local/share/GameModdingUtility &> /dev/null
 
-  wine mod_utility.exe build command-and-conquer-td
+  local log_file
+  log_file="$(mktemp)"
 
+  wine mod_utility.exe build command-and-conquer-td > >(tee "${log_file}") 2>&1
+
+  if grep "COMPILATION ERROR" "${log_file}" &> /dev/null || grep "Linker failed:" "${log_file}" &> /dev/null; then
+    rm -f "${log_file}"
+    exit 1
+  fi
+
+  rm -f "${log_file}"
   popd &> /dev/null
 }
 

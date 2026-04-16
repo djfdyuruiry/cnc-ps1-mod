@@ -1,2 +1,5 @@
 game_files
 output
+*.cue
+*.bin
+*.iso

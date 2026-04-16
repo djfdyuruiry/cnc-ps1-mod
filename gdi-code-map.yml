@@ -1,4 +1,26 @@
 variables:
+  # system
+  current_buttons:
+    address: "0x8012FED0"
+    type: unsigned short
+  buttons_pressed:
+    address: "0x8012FED2"
+    type: unsigned short
+  buttons_released:
+    address: "0x8012FED4"
+    type: unsigned short
+  previous_buttons:
+    address: "0x8012FED6"
+    type: unsigned short
+  gdi_disc_flag:
+    address: "0x0012E86D"
+    type: char
+  ini_data_storage: # Storage for either the scenario INI (whilst playing FMVs and loading) OR the mission.eng file
+    address: "0x000CC9A4"
+    type: char
+  covert_ops_flag:
+    address: "0x8012FCE4"
+    type: int
   # game control options
   cursor_speed:
     address: "0x800DEDB0"
@@ -19,6 +41,15 @@ variables:
     address: "0x8012FB59"
     type: unsigned char
   # ui control
+  reached_main_menu_flag:
+    address: "0x8012E894"
+    type: char
+  pause_menu_flag:
+    address: "0x8012FA58"
+    type: char
+  pause_menu_message:
+    address: "0x8012D01C"
+    type: char
   ui_music_track: # update this and music_track to change the score
     address: "0x800DEDC0"
     type: unsigned char
@@ -35,26 +66,52 @@ variables:
     type: int
   # scenario control
   scenario_number:
-    address: "0x0012E83C"
+    address: "0x8012E870"
     type: int
+  scenario_name:
+    address: "0x000CA6FC"
+    type: char
   # infantry types
   InfantryE1:
-    address: "0x80134c18"
+    address: "0x80134C18"
+    type: InfantryTypeClass
+  InfantryCommando:
+    address: "0x80135410"
     type: InfantryTypeClass
   # unit types
   UnitJeep:
     address: "0x80132930"
     type: UnitTypeClass
 functions:
+  # psyq lib functions
+  ClearImage:
+    address: "0x800A343C"
+    signature: int ${NAME}(struct RECT *rect, unsigned char r, unsigned char g, unsigned char b)
+  itoa:
+    address: "0x800989C4"
+    signature: char * ${NAME}(int number)
   strcpy:
     address: "0x8009C894"
-    signature: char * ${NAME}(char* source, const char* destination)
+    signature: char * ${NAME}(char* destination, const char* source)
+  strlen:
+    address: "0x8009C8D8"
+    signature: int ${NAME}(const char *subject)
+  sprintf:
+    address: "0x8009D1FC"
+    signature: int ${NAME}(char* buffer, const char* fmt, ...)
+  SetGraphDebug:
+    address: "0x8007F828"
+    signature: int ${NAME}(int level)
+  # game functions
   get_mix_file_offset:
-    address: "0x800895d4"
+    address: "0x800895D4"
     signature: int ${NAME}(const char* filename)
   load_mix_file_data:
-    address: "0x80088f6c"
+    address: "0x80088F6C"
     signature: int ${NAME}(const char* filename, unsigned long* destination)
-  SetGraphDebug:
-    address: "0x8007f828"
-    signature: int ${NAME}(int level)
+  set_music_track:
+    address: "0x80087414"
+    signature: void ${NAME}(uint track_number)
+  start_music_track_playback:
+    address: "0x80087008"
+    signature: void ${NAME}()

@@ -1,11 +1,16 @@
 # Command & Conquer PS1 Mod
 
-This repo contains a mod for the Playstation 1 version of Command & Conquer (AKA Tiberian Dawn). It was built using the [C/C++ Game Modding Utility](https://github.com/C0mposer/C-Game-Modding-Utility) by [C0mposer](https://github.com/C0mposer).
+This repo contains a mod for the PlayStation 1 version of Command & Conquer (AKA Tiberian Dawn). It was built using the [C/C++ Game Modding Utility](https://github.com/C0mposer/C-Game-Modding-Utility) by [C0mposer](https://github.com/C0mposer).
 
 This mod is a space for me to learn about PS1 modding and reverse engineering. 
 
 What the mod can do so far:
 
+- Game state tracking, with the ability to detect:
+  - Main menu being shown (`GAME_STATE_MAIN_MENU`)
+  - New scenario being loaded (`GAME_STATE_SCENARIO`)
+  - Pause menu being shown (`GAME_STATE_PAUSE`)
+- Access game flags for controller button presses (ex. do something when SELECT is pressed)
 - Modify player credits
 - Change properties for game types (Infantry, Units etc.)
   - Change a units weapon, change the cost of a building etc.
@@ -38,7 +43,10 @@ The `scripts/generate-symbol-code.py` script uses [Jinja](https://jinja.palletsp
 
 ## Ghidra
 
-A Ghidra project is included in this repo that was used to reverse engineer the PS1 game code. Labels have been added to identified variables, functions, types and parameters.
+- A Ghidra project is included in this repo that was used to reverse engineer the PS1 game code.
+- Labels have been added to identified variables
+- Functions that have been successfully reversed engineered are labeled
+- Various constructors and object instances that match what is seen in the PC source code have been identified (`UnitTypeClass`, `ObjectTypeClass` etc.)
 
 Open `ghidra/cnc-psx.gpr` in Ghidra to get started.
 
